@@ -1,0 +1,279 @@
+@import "vars"
+
+@media only screen and (min-width : 380px)
+	.devices-img
+		background-size: 100%
+	.canTry::before
+		right: 50%
+		transform: translateX(50%)
+	.howTo
+		background-position: -68vw -38vw
+	/**/
+
+@media only screen and (min-width : 480px)
+	.page-wrapper
+		background-size: auto 170vh
+
+	.step input, .step .error
+		max-width: 435px
+		margin: 0 auto
+
+	.thanks
+		background-position: -220px 35px
+	/**/
+
+@media only screen and (min-width : 576px)
+	.page-wrapper
+		background-size: 100% 159vh
+	/**/
+
+@media only screen and (min-width : 768px)
+
+	.page-wrapper
+		background-image: url('../img/bg/md-bg/curve1.png')
+		background-repeat: no-repeat
+		background-position: 30% 242px
+		background-size: auto 144vh
+	.devices-img
+		max-width: 552px
+	.reviewer
+		padding: 20px 95px
+
+
+
+	.tarrifs
+		min-height: 420px
+		display: flex
+		justify-content: center
+		&-item
+			width: 240px
+			position: relative
+			&.recommend, &:hover
+				width: 280px
+				transform: scale(1.1)
+				z-index: 10
+				.tarrifs-purchase
+					opacity: 1
+					transition: all .2s linear
+					
+					
+		&-purchase
+			opacity: 0
+			transition: all .2s linear
+			
+
+	.step1
+		.step-title
+			margin-bottom: 2rem
+
+	.tarrifs
+		&::before
+			width: 500px
+		&-purchase
+			width: 200px
+			text-align: center
+			padding: 11px 0
+
+	.step-accordion .collapse-form
+		padding: 1rem 1rem 2rem
+		border: 1px solid #ced4da
+		background-color: #fafafa
+	.step-form-btn
+		margin-top: 11px
+	.step3-guarantee, .step3-confirm
+		text-align: left
+	.step input
+		margin: 0 auto
+		
+	.step-accordion-btn
+		padding-bottom: 15px
+		img
+			margin-left: 20px
+			display: inline-block
+			
+
+	.steps
+		position: relative
+		&::before
+			content: ''
+			display: block
+			width: 100%
+			height: 100%
+			position: absolute
+			left: 0
+			bottom: -60vw
+			background: url('../img/bg/lg-bg/curve2.png') no-repeat 50% 100%
+			background-size: 100%
+			z-index: 0
+		.form-text
+			margin: 0 auto
+			max-width: 645px
+		.step-info
+			margin: 1.5rem 0 1.85rem
+
+	.howTo
+		background-image: none
+
+
+	.endorsment-post
+		max-width: 535px
+		margin-left: auto
+		margin-right: auto
+	.endorsment-text
+		padding: 0 10vw
+
+
+
+	.canTry
+		min-height: 534px
+		padding-top: 150px
+		background-position: 0 0
+		background-size: 100%
+		&::before
+			right: 13vw
+			transform: none
+		
+
+	.footer-list-title
+		text-decoration: none
+		padding: .1rem 0
+
+	.footer-copy
+		margin-right: 15px
+
+	.thanks-page
+		.get
+			padding: 6rem 0
+	.thanks
+		padding: 9rem 0 11.8rem
+		background-image: url('../img/bg/lg-bg/curve4.png')
+		background-position: -500px 135px
+		&-title
+			max-width: 100%
+	/**/
+
+@media only screen and (min-width : 992px)
+
+	.page-wrapper
+		background-image: url(../img/bg/lg-bg/curve1.png)
+		background-repeat: no-repeat
+		background-position: 0 7vw
+		background-size: auto 1300px
+
+
+	.page-title
+		position: relative
+		min-height: 270px
+		display: flex
+		align-items: center
+	.devices-img
+		max-width: 100%
+		height: auto
+		min-height: 225px
+		display: none
+		
+
+	.page-title-text, .page-title .btn-wrap
+		text-align: left
+		max-width: 100%
+	.page-title-text
+		padding-right: 11vw
+	.page-title .btn-wrap .btn
+		padding: 11px 45px
+	.steps
+		&::before
+			bottom: -52vw
+	/**/
+
+@media only screen and (min-width : 1200px)
+
+	.page-wrapper
+		background-size: 100% 1200px
+
+	.devices-img
+		min-height: 265px
+	.reviewer-blockquote
+		padding: 0 240px
+	.reviewer-name
+		line-height: 1.8
+		margin-right: 5px
+	.advantages-list
+		display: flex
+		flex-wrap: wrap
+	.advantages-list-item
+		flex: 0 0 50%
+		max-width: 50%
+
+	.steps
+		padding-top: 120px
+
+	.tarrifs-item
+		margin: 0 20px 37px
+	.tarrifs
+		&-item
+			width: 300px
+			&.recommend, &:hover
+				width: 320px
+
+	.step-accordion .collapse-form
+		padding: 1rem 2rem 2rem
+	.step-accordion-btn
+		padding-left: 60px
+	.step-accordion .card-header::before
+		left: 30px
+	.step-accordion-btn-text
+		display: inline-block
+		min-width: 100px
+
+	.howTo
+		padding-top: 150px
+		&-title, &-text
+			margin-bottom: 1.5rem
+	.steps::before
+		bottom: -630px
+		background-size: 100% 700px
+
+	.endorsment-post
+		min-height: 320px
+	.endorsment-text
+		padding: 0 20px
+
+
+	.canTry
+		padding-top: 200px
+		&::before
+			right: 22vw
+		&-title
+			margin-bottom: 1.8rem
+		&-text
+			margin-bottom: 1.8rem
+
+
+	.footer-payment-logos
+		margin: .8rem auto
+	.footer-info
+		height: 100%
+		display: flex
+		align-items: flex-end
+
+
+	.thanks-page
+		min-height: 100vh
+		height: 1px
+		background-color: #021982
+		.header
+			background-color: #fff
+		.get
+			padding: 3rem 0
+	.thanks
+		background-image: url('../img/bg/lg-bg/curve4.png')
+		background-color: #fff
+		background-position: -200px 85px
+	
+	/**/
+
+@media only screen and (min-width : 1400px)
+	.thanks 
+		background-position: -800px -46px
+		background-size: 200%
+	/**/
