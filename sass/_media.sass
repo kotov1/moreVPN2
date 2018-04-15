@@ -1,78 +1,90 @@
 @import "vars"
 
-@media only screen and (min-width : 380px)
-	.devices-img
-		background-size: 100%
-	.canTry::before
-		right: 50%
-		transform: translateX(50%)
-	.howTo
-		background-position: -68vw -38vw
-	/**/
 
 @media only screen and (min-width : 480px)
-	.page-wrapper
-		background-size: auto 170vh
 
-	.step input, .step .error
+	.step2 input, .step .error
 		max-width: 435px
 		margin: 0 auto
 
-	.thanks
-		background-position: -220px 35px
+	.info
+		&-img
+			max-width: 100%
+			margin: 2.6rem auto 0
+
+	.page-wrapper.thanks-page
+		background-image: url('../img/bg/md-bg/bg.jpg')
+		background-position: center
+	
+		.thanks
+			padding: 2rem 0
+		.get
+			padding: 1rem 0
+		.usefull
+			padding: 1rem 0
+
+
+
 	/**/
+
+
 
 @media only screen and (min-width : 576px)
 	.page-wrapper
-		background-size: 100% 159vh
+		background-size: 100% auto
 	/**/
 
 @media only screen and (min-width : 768px)
 
 	.page-wrapper
-		background-image: url('../img/bg/md-bg/curve1.png')
-		background-repeat: no-repeat
-		background-position: 30% 242px
-		background-size: auto 144vh
+		background: url('../img/bg/lg-bg/bg.jpg') no-repeat
+		background-size: auto 500px
+
+	.page-title-text
+		font-size: 3em
+	.logo-wrap
+		margin: 0
 	.devices-img
 		max-width: 552px
-	.reviewer
-		padding: 20px 95px
-
 
 
 	.tarrifs
-		min-height: 420px
+		height: 445px
 		display: flex
 		justify-content: center
+		&::before
+			width: 500px
 		&-item
 			width: 240px
+			height: 310px
 			position: relative
+			&:not(:hover)
+				top: 30px
+			&:not(.recommend)
+				top: 30px
 			&.recommend, &:hover
-				width: 280px
-				transform: scale(1.1)
+				top: 0
+				width: 320px
+				height: 380px
 				z-index: 10
 				.tarrifs-purchase
 					opacity: 1
 					transition: all .2s linear
-					
-					
 		&-purchase
+			width: 200px
+			text-align: center
 			opacity: 0
 			transition: all .2s linear
-			
 
+
+	.steps
+		padding: 0 0 3.125rem
+		.section-title
+			margin: 1rem 0 0	
 	.step1
 		.step-title
 			margin-bottom: 2rem
 
-	.tarrifs
-		&::before
-			width: 500px
-		&-purchase
-			width: 200px
-			text-align: center
-			padding: 11px 0
 
 	.step-accordion .collapse-form
 		padding: 1rem 1rem 2rem
@@ -87,133 +99,86 @@
 		
 	.step-accordion-btn
 		padding-bottom: 15px
-		img
-			margin-left: 20px
+		&-text
+			min-width: 115px
 			display: inline-block
-			
 
+		img
+			margin-left: 18px
+			display: inline-block
 	.steps
 		position: relative
-		&::before
-			content: ''
-			display: block
-			width: 100%
-			height: 100%
-			position: absolute
-			left: 0
-			bottom: -60vw
-			background: url('../img/bg/lg-bg/curve2.png') no-repeat 50% 100%
-			background-size: 100%
-			z-index: 0
 		.form-text
 			margin: 0 auto
 			max-width: 645px
 		.step-info
 			margin: 1.5rem 0 1.85rem
 
+	.advantages
+		background-image: url('../img/bg/lg-bg/bg2.jpg')
+		background-position: 50% 0
+		&-title
+			text-align: center
+
+	.info
+		padding: 3.125rem 0
+		&-title
+			padding: 0 22%
+		&-btn
+			margin-top: 1rem
+			
+	.trusted
+		padding: 3.125rem 0
+		img
+			margin: 15px 17px
+	.sponsored
+		padding: 3.125rem 0
+		img
+			margin: 15px 10px
+
+
 	.howTo
-		background-image: none
-
-
-	.endorsment-post
-		max-width: 535px
-		margin-left: auto
-		margin-right: auto
-	.endorsment-text
-		padding: 0 10vw
-
-
-
-	.canTry
-		min-height: 534px
-		padding-top: 150px
-		background-position: 0 0
-		background-size: 100%
-		&::before
-			right: 13vw
-			transform: none
-		
-
-	.footer-list-title
-		text-decoration: none
-		padding: .1rem 0
+		background: url('../img/bg/lg-bg/bg3.jpg') no-repeat 55% 100%
+		&-title
+			padding-right: 0
+			font-size: 2.75em
+		&-link
+			margin: 0 0 10px
 
 	.footer-copy
-		margin-right: 15px
+		margin-right: 5px
 
-	.thanks-page
-		.get
-			padding: 6rem 0
-	.thanks
-		padding: 9rem 0 11.8rem
-		background-image: url('../img/bg/lg-bg/curve4.png')
-		background-position: -500px 135px
-		&-title
-			max-width: 100%
+
+
+	.page-wrapper.thanks-page
+		background-image: url(../img/bg/thanks/lg-bg.jpg)
+		.thanks
+			&-title
+				padding: 0
+				font-size: 3em
 	/**/
 
-@media only screen and (min-width : 992px)
-
-	.page-wrapper
-		background-image: url(../img/bg/lg-bg/curve1.png)
-		background-repeat: no-repeat
-		background-position: 0 7vw
-		background-size: auto 1300px
-
-
-	.page-title
-		position: relative
-		min-height: 270px
-		display: flex
-		align-items: center
-	.devices-img
-		max-width: 100%
-		height: auto
-		min-height: 225px
-		display: none
-		
-
-	.page-title-text, .page-title .btn-wrap
-		text-align: left
-		max-width: 100%
-	.page-title-text
-		padding-right: 11vw
-	.page-title .btn-wrap .btn
-		padding: 11px 45px
-	.steps
-		&::before
-			bottom: -52vw
-	/**/
 
 @media only screen and (min-width : 1200px)
 
 	.page-wrapper
-		background-size: 100% 1200px
-
-	.devices-img
-		min-height: 265px
-	.reviewer-blockquote
-		padding: 0 240px
-	.reviewer-name
-		line-height: 1.8
-		margin-right: 5px
-	.advantages-list
-		display: flex
-		flex-wrap: wrap
-	.advantages-list-item
-		flex: 0 0 50%
-		max-width: 50%
-
-	.steps
-		padding-top: 120px
+		background-size: 100% 500px
+	.page-title
+		padding: 30px 0
+		&-text
+			font-size: 3.625em
+			br
+				display: none
+			
 
 	.tarrifs-item
-		margin: 0 20px 37px
+		margin: 0 0 37px
 	.tarrifs
 		&-item
-			width: 300px
+			width: 320px
 			&.recommend, &:hover
-				width: 320px
+				width: 370px
+				max-width: 370px
 
 	.step-accordion .collapse-form
 		padding: 1rem 2rem 2rem
@@ -221,59 +186,28 @@
 		padding-left: 60px
 	.step-accordion .card-header::before
 		left: 30px
-	.step-accordion-btn-text
-		display: inline-block
-		min-width: 100px
+
+
+	.advantages
+		padding: 3.125rem 0
+
+	.info
+		&-title
+			padding: 0
 
 	.howTo
-		padding-top: 150px
+		background-position: 100% 100%
+		background-size: cover
 		&-title, &-text
 			margin-bottom: 1.5rem
-	.steps::before
-		bottom: -630px
-		background-size: 100% 700px
-
-	.endorsment-post
-		min-height: 320px
-	.endorsment-text
-		padding: 0 20px
+		&-link
+			margin: 0 13px
 
 
-	.canTry
-		padding-top: 200px
-		&::before
-			right: 22vw
-		&-title
-			margin-bottom: 1.8rem
-		&-text
-			margin-bottom: 1.8rem
 
 
-	.footer-payment-logos
-		margin: .8rem auto
-	.footer-info
-		height: 100%
-		display: flex
-		align-items: flex-end
-
-
-	.thanks-page
-		min-height: 100vh
-		height: 1px
-		background-color: #021982
-		.header
-			background-color: #fff
-		.get
-			padding: 3rem 0
-	.thanks
-		background-image: url('../img/bg/lg-bg/curve4.png')
-		background-color: #fff
-		background-position: -200px 85px
+	.page-wrapper.thanks-page
+		background-image: url(../img/bg/thanks/lg-bg.jpg)
+		
 	
-	/**/
-
-@media only screen and (min-width : 1400px)
-	.thanks 
-		background-position: -800px -46px
-		background-size: 200%
 	/**/
