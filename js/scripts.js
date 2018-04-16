@@ -23,38 +23,6 @@ $(function() {
 
 	$('.my-tooltip').tooltip();
 
-	function adjustCollapseView(){
-		var desktopView = $(document).width();
-		if(desktopView >= "768"){
-			$(".footer-list-title").attr("data-toggle","");
-			$(".footer-list").removeClass('collapse');
-		}else{
-			$(".footer-list-title").attr("data-toggle","collapse");
-			$(".footer-list").addClass('collapse');
-		}
-	}
-
-	$(function(){
-		adjustCollapseView();
-		$(window).on("resize", function(){
-			adjustCollapseView();
-		});
-	});
-
-	function setEqualHeight(columns){
-	var tallestcolumn = 0;
-	columns.each(function(){
-		currentHeight = $(this).height();
-		if(currentHeight > tallestcolumn){
-			tallestcolumn = currentHeight;
-		}
-	});
-	columns.height(tallestcolumn);
-	}
-	$(document).ready(function() {
-	setEqualHeight($(".endorsment-post"));
-	});
-
 
 	
 	$(".error").hide();

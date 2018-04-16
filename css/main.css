@@ -229,6 +229,9 @@ ul {
   color: #383c43;
   text-align: center;
 }
+.step-info a {
+  color: #005cfe;
+}
 .step-accordion .card {
   border: none;
 }

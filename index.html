@@ -58,12 +58,12 @@
 			</div>
 
 
-			<section class="steps">
+			<div class="steps">
 				<div class="container">
 					<div class="step step1">
 						<div class="row">
 							<div class="col-12 d-flex justify-content-center">
-								<h2 class="section-title step-title_white">Choose a plan</h2>
+								<div class="section-title step-title_white">Choose a plan</div>
 							</div>
 							<div class="col-12">
 								<div class="tarrifs">	
@@ -103,7 +103,7 @@
 					<div class="step step2">
 						<div class="row">
 							<div class="col-12 d-flex justify-content-center">
-								<h2 class="section-title">Your account information</h2>
+								<div class="section-title">Your account information</div>
 							</div>
 							<div class="col-12">
 								<div class="step-info">Already signed up? <a href="#">Sign in now</a></div>
@@ -120,7 +120,7 @@
 										<input type="password" name="Password Confirm" class="form-control" id="password-confirm" autocomplete="off" placeholder="Confirm password" required>
 										<div class="error">Passwords do not match</div>
 									</div>
-									<div id="emailHelp" class="form-text">We are committed to keeping your information confidential, and will use it solely to provide you with content and login information related to NOVAVPN.</div>
+									<div class="form-text">We are committed to keeping your information confidential, and will use it solely to provide you with content and login information related to NOVAVPN.</div>
 								</form>
 							</div>
 						</div>
@@ -129,7 +129,7 @@
 					<div class="step step3">
 						<div class="row">
 							<div class="col-12 d-flex justify-content-center">
-									<h2 class="section-title">Enter your billing information</h2>
+									<div class="section-title">Enter your billing information</div>
 								</div>
 								<div class="col-12">
 									<div class="step-info">You <b>will not be billed</b> until your trial ends</div>
@@ -182,8 +182,10 @@
 															</div>
 															<div class="row mt-md-2">
 																<div class="form-group col-12 col-md-6">
-																		<label for="inputCoupon1"><a href="#">Got coupon?</a></label>
-																		<input type="text" class="form-control restrict-str" id="inputCoupon1" placeholder="0000 0000 0000 0000" autocomplete="off" maxlength="16">
+																	<label><a href="#inputCoupon1" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="inputCoupon1">Got coupon?</a></label>
+																	<div class="collapse" id="inputCoupon1">
+																		<input type="text" class="form-control restrict-str" placeholder="0000 0000 0000 0000" autocomplete="off" maxlength="16">
+																	</div>
 																</div>
 																<div class="col-12 col-md-6 d-flex justify-content-center align-items-center">
 																	<button type="submit" class="btn step-form-btn">Join now</button>
@@ -236,8 +238,10 @@
 															</div>
 															<div class="row mt-md-2">
 																<div class="form-group col-12 col-md-6">
-																		<label for="inputCoupon2"><a href="#">Got coupon?</a></label>
-																		<input type="text" class="form-control" id="inputCoupon2" placeholder="0000 0000 0000 0000" autocomplete="off" maxlength="16">
+																	<label><a href="#inputCoupon2" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="inputCoupon2">Got coupon?</a></label>
+																	<div class="collapse" id="inputCoupon2">
+																		<input type="text" class="form-control restrict-str" placeholder="0000 0000 0000 0000" autocomplete="off" maxlength="16">
+																	</div>
 																</div>
 																<div class="col-12 col-md-6 d-flex justify-content-center align-items-center">
 																	<button type="submit" class="btn step-form-btn">Join now</button>
@@ -286,15 +290,17 @@
 																		<input type="text" class="form-control restrict-str" id="inputCvv3" placeholder="000" autocomplete="off" maxlength="3" required>
 																</div>
 																<div class="form-group col-6">
-																		<label for="inputPostalCode3">Postal code<i class="my-tooltip" data-toggle="tooltip" data-placement="top" title="Postal code is bla bla bla"></i></label>
+																	<label for="inputPostalCode3">Postal code<i class="my-tooltip" data-toggle="tooltip" data-placement="top" title="Postal code is bla bla bla"></i></label>
 																		<input type="text" class="form-control restrict-str" id="inputPostalCode3" autocomplete="off" maxlength="3" placeholder="000" required>
 																</div>
 																<div class="col-12"><div class="form-divider"></div></div>
 															</div>
 															<div class="row mt-md-2">
 																<div class="form-group col-12 col-md-6">
-																		<label for="inputCoupon3"><a href="#">Got coupon?</a></label>
-																		<input type="text" class="form-control restrict-str" id="inputCoupon3" placeholder="0000 0000 0000 0000" autocomplete="off" maxlength="16">
+																	<label><a href="#inputCoupon3" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="inputCoupon3">Got coupon?</a></label>
+																	<div class="collapse" id="inputCoupon3">
+																		<input type="text" class="form-control restrict-str" placeholder="0000 0000 0000 0000" autocomplete="off" maxlength="16">
+																	</div>
 																</div>
 																<div class="col-12 col-md-6 d-flex justify-content-center align-items-center">
 																	<button type="submit" class="btn step-form-btn">Join now</button>
@@ -313,7 +319,7 @@
 					</div>
 					
 				</div> <!-- /.container -->
-			</section>
+			</div>
 			
 
 
