@@ -211,8 +211,7 @@ ul {
   color: #dadadb;
   letter-spacing: 1px;
 }
-.steps .error {
-  padding: 5px 0 0;
+.steps .error + .error {
   font: 14px "GothamLight", "GothamMedium", sans-serif;
   color: #ff3d4c;
 }
@@ -286,7 +285,7 @@ ul {
   text-align: center;
 }
 
-.step3 label {
+.step3 label:not(.error) {
   position: relative;
   font: 12px "BrandonMedium", sans-serif;
   color: #383c43;
@@ -335,6 +334,9 @@ ul {
   z-index: 1;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
+}
+.tarrifs-item.recommend, .tarrifs-item:hover {
+  cursor: pointer;
 }
 .tarrifs-item.recommend .tarrifs-price, .tarrifs-item:hover .tarrifs-price {
   font-size: 58px;
@@ -435,6 +437,7 @@ ul {
 }
 
 .step3-guarantee {
+  padding-left: 35px;
   color: #333;
   font-family: "Roboto-Regular", "BrandonRegular", "BrandonMedium", sans-serif;
 }
@@ -655,7 +658,7 @@ ul {
 }
 
 @media only screen and (min-width: 480px) {
-  .step2 input, .step .error {
+  .step2 .form-line {
     max-width: 435px;
     margin: 0 auto;
   }
@@ -771,6 +774,11 @@ ul {
 
   .step3-guarantee, .step3-confirm {
     text-align: left;
+  }
+
+  .step3-guarantee {
+    padding: 10px 0 10px 40px;
+    background: url("../img/icons/guarantee30.png") no-repeat 0 0;
   }
 
   .step input {
