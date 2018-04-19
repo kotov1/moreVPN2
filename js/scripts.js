@@ -47,7 +47,6 @@ $(function() {
 
 
 	$('.tarrifs-item').click(function() {
-		$('#login-collapse').collapse();
 		var top = $('#login-collapse').offset().top;
 		$('body,html').animate({scrollTop: top-100}, 1000);
 	});
@@ -80,11 +79,6 @@ $(function() {
 			}
 		});
 
-	$('.step2 input').change(function() {
-		if($("#login-form").valid()) {
-			$('#step-accordion').collapse();
-		}
-	})
 
 	$(".payment-form1").validate({
 			rules: {
