@@ -206,10 +206,32 @@ ul {
 }
 .steps input {
   padding: 1.1rem 0.5rem 0.9rem 2rem;
-  font: 12px "BrandonRegular", "BrandonMedium", sans-serif;
-  text-transform: uppercase;
-  color: #dadadb;
+  font: 16px "BrandonRegular", "BrandonMedium", sans-serif;
   letter-spacing: 1px;
+}
+.steps input::-webkit-input-placeholder {
+  text-transform: uppercase;
+  font: 12px "BrandonRegular", "BrandonMedium", sans-serif;
+  color: #dadadb;
+  letter-spacing: 2px;
+}
+.steps input:-ms-input-placeholder {
+  text-transform: uppercase;
+  font: 12px "BrandonRegular", "BrandonMedium", sans-serif;
+  color: #dadadb;
+  letter-spacing: 2px;
+}
+.steps input::-ms-input-placeholder {
+  text-transform: uppercase;
+  font: 12px "BrandonRegular", "BrandonMedium", sans-serif;
+  color: #dadadb;
+  letter-spacing: 2px;
+}
+.steps input::placeholder {
+  text-transform: uppercase;
+  font: 12px "BrandonRegular", "BrandonMedium", sans-serif;
+  color: #dadadb;
+  letter-spacing: 2px;
 }
 .steps .error + .error {
   font: 14px "GothamLight", "GothamMedium", sans-serif;
