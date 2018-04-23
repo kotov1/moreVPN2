@@ -533,12 +533,114 @@ ul {
 .trusted img {
   max-width: 47%;
 }
+.trusted img[src*="forbes"] {
+  height: 27px;
+}
+.trusted img[src*="yahoo"] {
+  height: 28px;
+}
+.trusted img[src*="business"] {
+  height: 26px;
+}
+.trusted img[src*="pc"] {
+  height: 29px;
+}
+.trusted img[src*="msn"] {
+  height: 29px;
+}
+.trusted img[src*="cbs"] {
+  height: 27px;
+}
+.trusted img[src*="network"] {
+  height: 29px;
+}
+.trusted img[src*="kiplinger"] {
+  height: 31px;
+}
+.trusted img[src*="register"] {
+  height: 29px;
+}
+.trusted img[src*="att"] {
+  height: 33px;
+}
 
 .sponsored {
   padding: 2rem 0 3.5rem;
 }
 .sponsored img {
   max-width: 45%;
+}
+.sponsored img[src*="eff"] {
+  height: 43px;
+}
+.sponsored img[src*="future"] {
+  height: 29px;
+}
+.sponsored img[src*="access"] {
+  height: 50px;
+}
+.sponsored img[src*="krita"] {
+  height: 49px;
+}
+.sponsored img[src*="hacks"] {
+  height: 40px;
+}
+.sponsored img[src*="usenix"] {
+  height: 34px;
+}
+.sponsored img[src*="society"] {
+  height: 40px;
+}
+.sponsored img[src*="gnome"] {
+  height: 38px;
+}
+.sponsored img[src*="ces"] {
+  height: 45px;
+}
+.sponsored img[src*="wire"] {
+  height: 33px;
+}
+.sponsored img[src*="encrypt"] {
+  height: 36px;
+}
+.sponsored img[src*="blender"] {
+  height: 42px;
+}
+.sponsored img[src*="fff"] {
+  height: 44px;
+}
+.sponsored img[src*="apache"] {
+  height: 46px;
+}
+.sponsored img[src*="tnabc"] {
+  height: 38px;
+}
+.sponsored img[src*="xindex"] {
+  height: 39px;
+}
+.sponsored img[src*="blockexp"] {
+  height: 31px;
+}
+.sponsored img[src*="btct"] {
+  height: 44px;
+}
+.sponsored img[src*="sfc"] {
+  height: 45px;
+}
+.sponsored img[src*="freenode"] {
+  height: 35px;
+}
+.sponsored img[src*="org"] {
+  height: 35px;
+}
+.sponsored img[src*="rightscon"] {
+  height: 44px;
+}
+.sponsored img[src*="lfa"] {
+  height: 35px;
+}
+.sponsored img[src*="itu"] {
+  height: 57px;
 }
 
 .howTo {
@@ -1029,16 +1131,22 @@ ul {
   .info-btn {
     margin-top: 1rem;
   }
+  .info-img {
+    max-width: 610px;
+  }
 
   .trusted {
-    padding: 3.125rem 0;
+    padding: 4rem 0;
+  }
+  .trusted .section-title {
+    margin-bottom: 2rem;
   }
   .trusted img {
     margin: 15px 17px;
   }
 
   .sponsored {
-    padding: 3.125rem 0;
+    padding: 4rem 0;
   }
   .sponsored img {
     margin: 15px 10px;
