@@ -802,9 +802,9 @@ ul {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   background: url(../img/bg/thanks/lg-bg.jpg) no-repeat !important;
   background-size: cover !important;
 }
@@ -816,6 +816,7 @@ ul {
 .payment-wait {
   width: 430px;
   min-height: 280px;
+  height: 1px;
   min-width: 290px;
   position: fixed;
   top: 50%;
