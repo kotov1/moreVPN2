@@ -102,6 +102,8 @@ ul
 		box-shadow: none
 
 		
+
+
 .steps
 	padding: 0 0 20px
 	.form-line
@@ -123,7 +125,7 @@ ul
 		&::placeholder
 			text-transform: uppercase
 			font: 12px "BrandonRegular", $medium_font
-			color: #dadadb
+			color: #858585
 			letter-spacing: 2px
 
 	.error+.error
@@ -135,6 +137,11 @@ ul
 	&:not(:last-child)
 		margin-bottom: 30px
 	&-title
+		text-align: center
+		font: 1.125em $medium_font
+		color: #383c43
+		text-transform: uppercase
+		letter-spacing: 2px
 		&_white
 			color: #fff
 	&-info
@@ -186,6 +193,7 @@ ul
 			
 			img
 				display: none
+				max-height: 25px
 
 .step2
 	&-sign
@@ -202,10 +210,12 @@ ul
 		letter-spacing: 1px
 	input
 		padding: 0.8rem 0.5rem 0.8rem 2rem	
-	a
+	a:not(.btn)
 		color: #006ad7
 		&:hover
 			color: lighten(#006ad7, 5%)
+	.card-number, .card-cvv
+		background: #fff url('../img/icons/input-lock.png') no-repeat calc(100% - 20px) 50%
 
 .tarrifs
 	position: relative
@@ -234,7 +244,7 @@ ul
 		position: relative
 		z-index: 1
 		transition: all .2s
-		&.recommend, &:hover
+		&.recommend
 			cursor: pointer
 			.tarrifs-price
 				font-size: 58px
@@ -291,11 +301,10 @@ ul
 	position: absolute
 	top: -3px
 	right: -30px
-	width: 19px
-	height: 19px
+	width: 18px
+	height: 18px
 	border-radius: 50%
-	background: url('../img/icons/input-icons-set.png') no-repeat
-	background-position: -20px 0
+	background: url('../img/icons/input-tooltip.png') no-repeat 0 0
 
 .form-divider
 	border-top: 1px solid rgba(0,0,0,.125)
@@ -312,19 +321,51 @@ ul
 	&:hover
 		background-color: lighten(#01356b, 5%)
 
-.step3-guarantee, .step3-confirm
-	margin-top: 15px
-	font-size: 14px
-	text-align: center
-.step3-guarantee 
+.payment-footer
+	font-family: "Roboto-Regular", sans-serif
+.step3-guarantee, .step3-confirm, .tarrif-info
+	margin-top: 10px
+.step3-guarantee, .step3-confirm, .tarrif-info, .step3-contact
+	font-size: 12px
+.step3-guarantee, .tarrif-info
 	color: #333
-	font-family: "Roboto-Regular", $regular_font
-.step3-confirm
+.step3-confirm, .step3-contact
 	color: #969696
-	font-family: "Roboto-Regular", $regular_font
-
+.step3-contact
+	margin-top: 20px
+	&-info, &-data
+		margin-bottom: 0
+.payment-form1, .payment-form2, .payment-form3
+	padding-bottom: 10px
+.payment-form-info
+	padding: 24px 0 40px
+	min-height: 170px
+	height: auto
+	color: #333
+	font: 14px "Roboto", sans-serif
+	text-align: center
+	.row
+		width: 100% //IE fix
+	&-text
+		margin: 20px 0 0 0
+	img
+		display: block
+		margin: 10px
+		max-height: 30px
+		
 .collapse-form
-	padding: 10px 0 1rem
+	padding: 10px 0 20px
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -501,10 +542,11 @@ ul
 	&-copy
 		color: #959698
 	&-support
-		color: #4a7ed9
 		a
+			color: #0025ff
+			font-weight: bold
 			&:hover
-				color: #8abcf1
+				color: lighten(#0025ff, 10%)
 
 
 

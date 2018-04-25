@@ -92,11 +92,18 @@
 		background-color: #fafafa
 	.step-form-btn
 		margin-top: 11px
-	.step3-guarantee, .step3-confirm
-		text-align: left
 	.step3-guarantee
-		padding: 10px 0 10px 40px
-		background: url('../img/icons/guarantee30.png') no-repeat 0 0
+		padding: 10px 0 10px 45px
+		position: relative
+		&::before
+			content: ''
+			width: 37px
+			height: 32px
+			position: absolute
+			left: 0
+			top: 0
+			background: url('../img/icons/7guarantee.svg') no-repeat 50% 50%
+			z-index: 0
 	.step input
 		margin: 0 auto
 		
