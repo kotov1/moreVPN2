@@ -206,30 +206,30 @@ ul {
 }
 .steps input {
   padding: 1.1rem 0.5rem 0.9rem 2rem;
-  font: 16px "BrandonRegular", "BrandonMedium", sans-serif;
+  font: 14px "BrandonRegular", "BrandonMedium", sans-serif;
   letter-spacing: 1px;
 }
 .steps input::-webkit-input-placeholder {
   text-transform: uppercase;
-  font: 12px "BrandonRegular", "BrandonMedium", sans-serif;
+  font: 14px "BrandonRegular", "BrandonMedium", sans-serif;
   color: #858585;
   letter-spacing: 2px;
 }
 .steps input:-ms-input-placeholder {
   text-transform: uppercase;
-  font: 12px "BrandonRegular", "BrandonMedium", sans-serif;
+  font: 14px "BrandonRegular", "BrandonMedium", sans-serif;
   color: #858585;
   letter-spacing: 2px;
 }
 .steps input::-ms-input-placeholder {
   text-transform: uppercase;
-  font: 12px "BrandonRegular", "BrandonMedium", sans-serif;
+  font: 14px "BrandonRegular", "BrandonMedium", sans-serif;
   color: #858585;
   letter-spacing: 2px;
 }
 .steps input::placeholder {
   text-transform: uppercase;
-  font: 12px "BrandonRegular", "BrandonMedium", sans-serif;
+  font: 14px "BrandonRegular", "BrandonMedium", sans-serif;
   color: #858585;
   letter-spacing: 2px;
 }
@@ -323,7 +323,8 @@ ul {
   letter-spacing: 1px;
 }
 .step3 input {
-  padding: 0.8rem 0.5rem 0.8rem 2rem;
+  height: 42px;
+  padding: 14px 0 12px 30px;
 }
 .step3 a:not(.btn) {
   color: #006ad7;
